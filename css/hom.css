@@ -1,0 +1,209 @@
+body
+{
+	background-color: darkred;
+	font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #333;
+    background-color: #fff;
+    -webkit-font-smoothing: antialiased;
+}
+
+#cont{
+z-index: 4;
+}
+#maincon
+{
+	background-color: white;
+	font-family: cursive;
+	font-size: 20px;
+}
+#title
+{
+	font-size: 30px;
+	text-align: center;
+	font-family: cursive;
+	color: white;
+}
+#tabledata
+{
+	align-content: center;
+	border: 100%;
+	border-radius: 10px;
+	color: white;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto; 
+}
+.cont2
+{
+z-index: 3;
+}
+.con
+{
+width: 100%;
+}
+.top{
+    width:100%;
+    height: 600px;
+}
+.top2
+{
+	width:100px;
+    height: 600px;
+
+}
+.introduction
+{
+	width: 100%;
+	height: 60%;
+}
+.onthetop {
+  position: absolute;
+  top: 40%;
+  left: 61%;
+  transform: translate(-50%, -50%);font-family: "pple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif";
+  font-size: 30px;
+  color: white;
+  line-height: 1.5;
+  box-sizing: border-box;
+  font-weight: bold;
+  color: #FFFFFF;
+    letter-spacing: 3.5px;
+    adding: 0;
+    margin: 0;
+    line-height: 1;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.2;
+    display: block;
+    font-size: 2.0em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: transparent;
+  position: relative;
+}
+
+.topnav #myLinks {
+  display: none;
+}
+
+.topnav a {
+  color: red;
+  background-color: transparent;
+  font: bold ;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+.topnav a.icon {
+  background: white;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+
+.buttonontop
+{
+position: absolute;
+top: 53%;
+left: -6%;}
+.row
+{
+	padding-left: 20px;
+}
+.trans
+{
+	color: black;
+}
+.col-3
+{
+	color: white;
+}
+.trans:hover
+{
+	color: red;
+}
+.trans:focus
+{
+	color: white;
+}
+#myintro
+{  width: 100%;
+}
+#stage1,#stage2,#stage3,#stage4,#stage5,#type1,#type2
+{
+	display: none;
+}
+#s1:hover
+{
+	color: red;
+	background-color: white;
+}
+body {
+  background: #000;
+}
+
+.loading-wrapper {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bar {
+  display: block;
+  height: 66px;
+  width: 20px;
+  background: #fff;
+  margin-right: 24px;
+  animation: scale 1.6s ease-in-out infinite;
+  transform-origin: 50% 50%;
+  box-shadow: 2px 2px 2px black;
+}
+
+.bar.one {
+  animation-delay: 1s;
+}
+
+.bar.two {
+  animation-delay: 1.2s;
+}
+
+.bar.three {
+  animation-delay: 1.3s;
+}
+
+@keyframes scale {
+  0% {
+    transform: scale(1);
+
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

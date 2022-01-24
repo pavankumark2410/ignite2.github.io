@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="info.xsd">
+  <xs:element name="ignite">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="navbar">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="home" type="xs:string" />
+              <xs:element name="services" type="xs:string" />
+              <xs:element name="contactus" type="xs:string" />
+              <xs:element name="aboutus" type="xs:string" />
+              <xs:element name="login" type="xs:string" />
+              <xs:element name="registration" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element maxOccurs="unbounded" name="vehicle">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="id" type="xs:unsignedByte" />
+              <xs:element name="brand" type="xs:string" />
+              <xs:element name="vehicleno" type="xs:string" />
+              <xs:element name="des" type="xs:string" />
+              <xs:element name="categoryid" type="xs:unsignedByte" />
+              <xs:element name="servicetype" type="xs:string" />
+              <xs:element name="status" type="xs:unsignedByte" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element maxOccurs="unbounded" name="customer">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="id" type="xs:unsignedByte" />
+              <xs:element name="name" type="xs:string" />
+              <xs:element name="address" type="xs:string" />
+              <xs:element name="phone" type="xs:unsignedLong" />
+              <xs:element name="email" type="xs:string" />
+              <xs:element name="usetype" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element maxOccurs="unbounded" name="mechanic">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="id" type="xs:unsignedByte" />
+              <xs:element name="name" type="xs:string" />
+              <xs:element name="address" type="xs:string" />
+              <xs:element name="phone" type="xs:unsignedLong" />
+              <xs:element name="type" type="xs:string" />
+              <xs:element name="usetype" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="admin">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="id" type="xs:unsignedByte" />
+              <xs:element name="name" type="xs:string" />
+              <xs:element name="address" />
+              <xs:element name="phone" />
+              <xs:element name="email" type="xs:string" />
+              <xs:element name="usetype" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="messagebox">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="userstype" type="xs:string" />
+              <xs:element name="userid" type="xs:unsignedByte" />
+              <xs:element name="to">
+                <xs:complexType mixed="true">
+                  <xs:sequence>
+                    <xs:element name="id" type="xs:unsignedByte" />
+                    <xs:element name="usetype" type="xs:string" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="time" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element maxOccurs="unbounded" name="category">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="id" type="xs:unsignedByte" />
+              <xs:element name="type" type="xs:string" />
+              <xs:element name="noofveh" type="xs:unsignedByte" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
