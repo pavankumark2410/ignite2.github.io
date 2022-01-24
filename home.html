@@ -1,0 +1,432 @@
+<?xml version="1.0"?>
+
+<xsl:stylesheet version="1.0"
+xmlns:xsl="info.xml">
+
+<xsl:template match="/ignite">
+
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+<link rel="stylesheet" href="node_modules/mdbootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="node_modules/mdbootstrap/css/mdb.min.css">
+<link rel="stylesheet" href="node_modules/mdbootstrap/css/style.css">
+<script type="text/javascript" src="node_modules/mdbootstrap/js/jquery.min.js"></script>
+<script type="text/javascript" src="node_modules/mdbootstrap/js/popper.min.js"></script>
+<script type="text/javascript" src="node_modules/mdbootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="node_modules/mdbootstrap/js/mdb.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="/css/hom.css">
+    <script type="text/javascript" src="/js/home.js"></script>
+    <!-- Font Awesome -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<link
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+  rel="stylesheet"
+/>
+<!-- Google Fonts -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+<link
+  href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+  rel="stylesheet"
+/>
+<!-- MDB -->
+<link
+  href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.1/mdb.min.css"
+  rel="stylesheet"
+/>
+	<title>Ignite</title>
+</head>
+<body >
+    <script type="text/javascript" src="html/validations.js"></script>
+<style type="text/css">
+    body
+    {
+        background-color:#380c0c;;font-family: "Saira Extra Condensed";
+    }
+    @media only screen and (min-device-width: 751px){
+  body {
+    background-color:black;
+  
+  }
+
+ 
+}
+</style>
+<!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+
+<div class="loading-wrapper">
+  <div class="bar one"  style="background-color:white;"></div>
+  <div class="bar two"  style="background-color:white;"></div>
+  <div class="bar three"  style="background-color:white;"></div>
+</div>
+
+<div class="main">
+<div class="modal fade" id="modalLoginForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">Sign in</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-1">
+            <div class="row">
+                <div class="col-2">
+          <i class="fas fa-envelope prefix grey-text"></i></div>
+          <div class="col-10">
+          <input type="email" id="defaultForm-email" class="form-control validate" placeholder="EMAIL">
+          </div>
+          </div>
+        </div>
+
+        <div class="md-form mb-1">
+            <div class="row"> 
+                <div class="col-2">
+          <i class="fas fa-lock prefix grey-text"></i></div>
+          <div class="col-10">
+          <input type="password" id="defaultForm-pass" class="form-control validate" placeholder="PASSWORD"></div>
+          </div>
+        </div>
+
+      </div>
+      <div class="modal-footer d-flex justify-content-center">
+        <div class="row">
+        <button class="btn btn-default">Login</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modalREGForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">Sign Up</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-1">
+            <div class="row">
+                <div class="col-2">
+          <i class="bi bi-person-fill prefix grey-text"></i></div>
+          <div class="col-5">
+          <input type="fname" id="fname" class="form-control validate" placeholder="FIRST NAME">
+        
+          </div>
+          <div class="col-5">
+          <input type="lname" id="lname" class="form-control validate" placeholder="LAST NAME">
+          
+          </div>
+          </div>
+        </div>
+        <div class="md-form mb-1">
+            <div class="row">
+                <div class="col-2">
+          <i class="fas fa-envelope prefix grey-text"></i></div>
+          <div class="col-10">
+          <input type="email" id="email" class="form-control validate" placeholder="EMAIL">
+         
+          </div>
+          </div>
+        </div>
+         <div class="md-form mb-1">
+            <div class="row">
+                <div class="col-2">
+          <i class="fas fa-phone prefix grey-text"></i></div>
+          <div class="col-10">
+          <input type="phone" id="pno" class="form-control validate" placeholder="PHONE NUMBER">
+         
+          </div>
+          </div>
+        </div>
+        <div class="md-form mb-1">
+            <div class="row"> 
+                <div class="col-2">
+          <i class="fas fa-lock prefix grey-text"></i></div>
+          <div class="col-10">
+          <input type="password" id="pass" class="form-control validate" placeholder="PASSWORD"></div>
+          </div>
+
+        </div>
+         <div class="md-form mb-1">
+            <div class="row"> 
+                <div class="col-2">
+          <i class="fas fa-lock prefix grey-text"></i></div>
+          <div class="col-10">
+          <input type="repassword" id="repass" class="form-control validate" placeholder="RETYPE-PASSWORD"></div>
+          </div>
+          
+        </div>
+
+      </div>
+      <div class="modal-footer d-flex justify-content-center">
+        <div class="row">
+           
+        <div class="col-6">
+        <button class="btn btn-default" id ="reg">REGISTER</button>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    <div class="container-fluid-lg" id ="cont" style="background-color: #a83232;position:fixed;width: 100%;">
+          <div class="row" style="background-color:black;color: #a83232;">
+           <div class="row" class="cont">
+              <div class="col-10" id="title"><strong>IGNITE</strong></div>
+              <div class="col-md-2" id="sidemobile">
+
+<!-- Top Navigation Menu -->
+<div class="topnav" >
+  <a href="home.html" class="active" style="text-align:center;font-size: 20px;">IGNITE</a>
+  <div id="myLinks">
+    <a href="#modd">MODIFY</a>
+    <a href="#upp">UPGRADE</a>
+    <a href="#contactusplz">CONTACT US</a>
+    <a href="#about">ABOUT US</a>
+    <a data-toggle="modal" data-target="#modalLoginForm">LOGIN</a>
+    <a data-toggle="modal" data-target="#modalREGForm">REG</a>
+  </div>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+</div>
+           </div>
+<style type="text/css">
+    .topnav
+    {
+        display: none;
+    }
+    @media only screen and (min-width: 200px) and (max-width: 767px)
+  
+  {
+    .topnav
+    {
+        display: block;
+    }
+  }
+</style>
+<script>
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+
+}
+</script>
+           <div class="row" class="cont" id="maincon" style="height: 70%;border-color: black;border-style:solid">
+              <div class="col-2" ><a href="home.html" id="trans" >HOME</a></div>
+              <div class="col-2 dropdown-toggle " data-toggle="dropdown" id="dropdownMenuLink" aria-haspopup="true" aria-expanded="false"><a href="#myservices" id="trans">SERVICES</a>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                  <a class="dropdown-item" href="#modd">MODIFY</a>
+                  <a class="dropdown-item" href="#upp">UPGRADE/TUNING</a>
+              </div>
+              </div>
+              <div class="col-2 trans"><a href="#contactusplz" id="trans">CONTACT US</a></div>
+              <div class="col-2 "><a href="#about" id="trans">ABOUT US</a></div>
+
+               <div class="col-2 "><a href="" id="trans" data-toggle="modal" data-target="#modalLoginForm">LOGIN</a></div>
+               <div class="col-2 "><a href="" id="trans" data-toggle="modal" data-target="#modalREGForm">REG</a></div>
+           </div>
+          </div>
+    </div >
+    <script type="text/javascript">
+        var y=document.getElementsByid("title");
+        var f=document.getElementById("maincon");
+        var z=document.getElementById("topnav");
+  if (y.style.display=="none") 
+  {
+    z.style.display="block";
+  }
+  else if(f.style.display=="none")
+  {
+    z.style.display="block";
+  }
+    </script>
+    <style type="text/css">
+        @media only screen and (min-width: 200px) and (max-width: 767px)
+  {
+    #maincon,.cont ,#title
+    {
+        display: none;
+    }
+    
+  }
+    </style>
+    <div class="container-fluid-lg " class="cont2">
+      <div class="row" style="padding-left: 20px;">
+
+                <img  class="top" src="/images/fast2.gif" style="opacity: 1;filter: blur(5px);">
+                <div class="onthetop img-responsive"><p>IGNITE<br>TRANSFORM YOUR VEHICLES INTO BEAST</p></div>
+                <div class="buttonontop" >
+                <div class="row">
+                    <div class="col-2"></div>
+                    <div class="col-2 "><a class="slide-in-right btn btn-danger btn-icon-text animatebutton " href="#ourinfo">DROP YOUR DETAILS</a></div>
+                    <div class="col-2"></div>
+                    <div class="col-2 "><a class="btn btn-danger btn-icon-text animatebutton " href="#ourinfo">CALL/CONTACT US</a></div>
+                   
+                </div>
+                </div>
+           </div>
+           <div id="myservices"  class="container-fluid-lg" style="text-align:center;font-family: cursive;color: black;margin-top: 15px;" ><h1><u style="background-color: white;color: black;text-align: center;" >MY SERVICES</u></h1></div>
+           <div class="row" style="padding: 10px;" id="upgrade" style="hover:width:1px">
+               
+               <div style="width:100%"  id="upp">
+                <div class="row">
+                    <div class="col">
+                    </div>
+                    <div class="col"> <img class="top2 uppimage" style="width: auto;height: auto;" src="/images/fast.gif"></div>
+                    <div class="col"></div>
+
+                </div>
+               <div class="row" >
+               <div class="col-1"></div>
+               <div class="col-xl-10 " style="background-color:black;text-align: center;">
+                <p style="align-content:center;text-align: center">
+                    <b><br>
+                        <mark style="background-color: #a83232;" ><em>UPGRADE/TUNING</em></mark>
+                    </b>
+                    <br>
+                    <ol>
+                        <table class="table" id="tabledata"  cellpadding="10px">
+                            <tr >
+                                <th scope="col-2 btn btn-danger btn-icon-text animatebutton"><button id="s1" style="background-color: transparent;color: white;" >STAGE 1</button></th>
+                                <th scope="col-2 btn btn-danger btn-icon-text animatebutton"><button id="s2" style="background-color: transparent;color: white;">STAGE 2</button></th>
+                                <th scope="col-2 btn btn-danger btn-icon-text animatebutton"><button id="s3" style="background-color: transparent;color: white;">STAGE 3</button></th>
+                                <th scope="col-2 btn btn-danger btn-icon-text animatebutton"><button id="s4" style="background-color: transparent;color: white;">STAGE 4</button></th>
+                                <th scope="col-2 btn btn-danger btn-icon-text animatebutton"><button id="s5" style="background-color: transparent;color: white;">STAGE 5</button></th>
+                            </tr>
+                        </table>
+                        <div id="stage1" style="color: white;"><b>Stage1 details</b><p> REMAP + EXHAUST + 50BHP</p><p>COST $300-$350</p></div>
+                        <div id="stage2" style="color: white;"><b>Stage2 details</b><p>BETTER REMAP + INDUCTION + 40BHP</p><p>COST $700-$800</p></div>
+                        <div id="stage3" style="color: white;"><b>Stage3 details</b><p>RACE INDUCTION KIT + XHAUST + 60BHP</p><p>COST $1200-$1500</p></div>
+                        <div id="stage4" style="color: white;"><b>Stage4 details</b><p>CYLINDER HEAD + STAGE3 + 70BHP</p><p>COST $2000-$2500</p></div>
+                        <div id="stage5" style="color: white;"><b>Stage5 details</b><p>TURBO KIT + STAGE3 PARTS +120BHP</p><p>COST $4000-$4500</p></div>
+                    </ol>
+                    <button class="btn btn-danger btn-icon-text animatebutton" >EXPLORE MORE</button>
+                </p>
+            </div>
+             <div class="col-1"></div>
+             </div>
+           </div> 
+    </div>
+    <div class="container-fluid-lg " class="cont2" id="modd">
+         <div class="row" style="padding: 10px;" id="upgrade" style="hover:width:1px">
+               <div class="col-sm-2 "></div>&nbsp&nbsp&nbsp
+               <div class="col-sm-4 " style="background-color:black;text-align: center;">
+                <p style="text-align: center">
+                    <b><br>
+                        <mark style="background-color: #a83232;" ><em>MODIFY</em></mark>
+                    </b>
+                    <br>
+                    <ol>
+                        <table class="table" id="tabledata"  cellpadding="2px">
+                            <tr >
+                                <th><button id="t1" style="background-color: transparent;color: white;" onclick="fun1()">TYPE 1</button></th>
+                                <th><button id="t2" style="background-color: transparent;color: white;">TYPE 2</button></th>
+                            </tr>
+                        </table>
+                        <div class="col-1" id="type1" style="color: white;"><li><b>Type 1</b><br><p></p></li></div>
+                        <div class="col-1" id="type2" style="color: white;"><li><b>Type2</b><br><p></p></li></div>
+                    </ol>
+                    <button class="btn btn-danger btn-icon-text animatebutton" style="align-self: center;">EXPLORE MORE</button>
+                </p>
+            </div>
+             <div class="col-sm-4" style="background-color:black; width: 2px;"><img class="img-responsive" src="/images/fast3.gif"></div>
+            <div class="col-lg-2"><a href=""></a></div>
+           </div> 
+   <div class="container-fluid-lg" id="about">
+    
+       <div class="row" style="background-color:#a83232;">
+         <div class="col-1"></div>
+        <div class="col-4" style="text-align:center;color: white;background-color: black;"><h1><br><br>WHO<br>ARE<br>WE ?</h1></div>
+           
+           <div class="col-6"  style="background-color:white;color: black;"> <div>IGNITE pride ourselves on delivering the highest quality of vehicle tuning, maintenance, repairs and installation of performance parts for our customers.<br><br>
+Based in Aberdeen, Scotland, We have invested heavily in our business in key area’s such as high level training, advanced software, latest technology tuning tools and workshop equipment. This has provided our team with all the correct tools, understanding and knowledge together with our experience to succeed in our work at the very highest standard possible.<br><br>
+IGNITE has been set up to offer the best service and advice on vehicle performance, be it for more power or more economy we have it covered.<br><br>
+We have our own Dyno Developments rolling road, custom in house map writing. We also have the latest diagnostic equipment and techniques at our disposal. With these tools and techniques we can provide customers with the best tuning and servicing solutions available to suit their individual requirements.</div></div>
+           <div class="col-1"></div>
+       </div>
+   </div>
+
+   <br>
+   <div class="container-fluid-lg mb-4" style="background-color: black;" id="contactusplz">
+    <form>
+       <div class="row">
+        <div class="col-2"></div>
+        <div class="col-2"></div>
+        <div class="col-4" style="text-align: center;font-size: 30px;color: white;background-color: black;text-align: center;"> <span>CONTACT US</span></div>
+         <div class="col-2"></div>
+         <div class="col-2"></div>
+       </div>
+       <div class="row" style="text-align:center;">
+           <div class="col-sm-6"><div class="form-group"><i class="fas fa-envelope prefix white-text" style="color:white;align-content: center;"></i>
+    <label for="exampleInputEmail1" style="text-align: center;font-size: 15px;color: white;">EMAIL-ADRESS</label>
+      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+  </div>
+  <div class="form-group">
+    <i class="bi bi-question-square-fill" style="color:white;"></i>
+    <label for="exampleFormControlTextarea1" style="text-align: center;font-size: 15px;color: white;">YOUR ISSUE </label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea><br>
+    <button class="slide-in-right btn btn-danger btn-icon-text animatebutton ">SUBMIT</button>
+  </div>
+</div>
+            <div class="col-sm-6 rounded" id="ourinfo" style="text-align: center;font-size: 15px;color: black;background-color: white;">
+                <br>
+                <br>
+                <div><i class="fas fa-phone prefix grey-text"></i>&nbsp&nbsp<span >PHONE NO :</span> +91 9900808472</div>
+                 <div> <i class="fas fa-envelope prefix grey-text"></i>&nbsp&nbsp<span>EMAIL-ID:</span> ignite@mail.com</div>
+                  <div><i class="bi bi-geo-alt-fill"></i>&nbsp&nbsp<span>ADDRESS</span> 692 , 1st Floor, 11th A Main Rd, 5th Block,<br>Jayanagar, Bengaluru, Karnataka 560041</div>
+                  <div><a href="https://www.instagram.com/"><i class="bi bi-instagram">INSTAGRAM</i></a>&nbsp&nbsp<a href="https://www.instagram.com/"><i class="bi bi-facebook">FACEBOOK</i></a>&nbsp&nbsp<a href="https://www.instagram.com/"><i class="bi bi-twitter">TWITTER</i></a></div>
+
+            </div>
+
+       </div>
+       <div class="row">
+        <h1 style="text-align:center;color: whitesmoke;">MY LOCATION</h1>
+        <div class="col-6">
+           <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d124444.52367013272!2d77.4739818!3d12.9147032!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae3fe4d4b1cc95%3A0xd439a8aedef51281!2sBookmycarservice%20Banashankri%20Multi%20Brand%20Car%20Repair%20And%20Service!5e0!3m2!1sen!2sin!4v1641360820809!5m2!1sen!2sin" width="723" height="457" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          </div>
+          <div class="col-lg-6" >
+              <iframe width="723" height="457" src="https://www.youtube.com/embed/OrPmKQATiG0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+    </iframe>
+       </div>
+
+   </form>
+   </div>
+</div>
+</div>
+</body>
+</html>
+    </xsl:template>
+</xsl:stylesheet>
